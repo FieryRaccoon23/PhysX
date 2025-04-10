@@ -21,7 +21,8 @@ workspace "nvflow"
     cppdialect "C++11"
     exceptionhandling "Off"
     rtti "Off"
-    flags { "FatalCompileWarnings", "NoPCH", "NoIncrementalLink" }
+    fatalwarnings { "All" }
+    flags { "NoPCH", "NoIncrementalLink" }
 
     floatingpoint "Fast"
     disablewarnings { "4550" }
