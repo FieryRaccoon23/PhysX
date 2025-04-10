@@ -155,6 +155,8 @@ bool SlangCompiler::compile(const char* codeString, std::vector<std::string> inc
         additionalArgs.push_back("-obfuscate");
 #endif
 
+        additionalArgs.push_back("-emit-spirv-via-glsl");
+
         if (additionalArgs.size() > 0)
         {
             spProcessCommandLineArguments(slangRequest, additionalArgs.data(), (int)additionalArgs.size());
